@@ -84,7 +84,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logo-top1.png" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -222,7 +222,8 @@
                     <label for="form" style="margin:29px;margin-top:5px; font-size: larger;">Request a call back from
                         our immigration experts
                     </label>
-                    <form action="https://formsubmit.co/napije2007@ukgent.com" method="post" target="hidden_iframe" class=" form-inline">
+                    <form action="https://formsubmit.co/napije2007@ukgent.com" method="post" target="hidden_iframe"
+                        class=" form-inline">
                         <!-- Honeypot -->
                         <input type="text" name="_honey" style="display:none">
 
@@ -233,17 +234,20 @@
                         <input type="hidden" name="_subject" value="New submission on Website!">
 
                         <!-- Next Page -->
-                        <input type="hidden" name="_next" value="https://haroonarfan.github.io/lawyerWebsiteDemo/index.html">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
 
                         <div class="col-md-12">
                             <div class="col-md-4" style="margin-bottom:10px;">
-                                <input type="text" class="form-control" required placeholder="First name and last name*" name="Name">
+                                <input type="text" class="form-control" required placeholder="First name and last name*"
+                                    name="Name">
                             </div>
                             <div class="col-md-4" style="margin-bottom:10px;">
-                                <input type="email" class="form-control" required placeholder="Email address*" name="Email">
+                                <input type="email" class="form-control" required placeholder="Email address*"
+                                    name="Email">
                             </div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" required placeholder="Phone Number*" name="Phone">
+                                <input type="text" class="form-control" required placeholder="Phone Number*"
+                                    name="Phone">
                             </div>
                         </div>
                         <div class="col-md-12" style="margin-top: 15px; padding-left: 30px;
@@ -253,8 +257,9 @@
                         </div>
 
                         <div class="col-md-12" style="padding: 15px;">
-                            <div class="col-md-4">                                   
-                                <select id="lunchBegins" class="selectpicker" required data-live-search="true" data-live-search-style="begins" title="Select your city" name="City">
+                            <div class="col-md-4">
+                                <select id="lunchBegins" class="selectpicker" required data-live-search="true"
+                                    data-live-search-style="begins" title="Select your city" name="City">
                                     <option>New york, CA</option>
                                     <option>Paris</option>
                                     <option>Casablanca</option>
@@ -263,8 +268,9 @@
                                     <option>kyoto , shibua</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">                                   
-                                <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city" required name="City2">
+                            <div class="col-md-4">
+                                <select id="lunchBegins" class="selectpicker" data-live-search="true"
+                                    data-live-search-style="begins" title="Select your city" required name="City2">
                                     <option>New york, CA</option>
                                     <option>Paris</option>
                                     <option>Casablanca</option>
@@ -276,7 +282,8 @@
                             <div class="col-md-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="Allow to send?">&nbsp; Yes, I am happy for your network of lawyers to contact me.
+                                        <input type="checkbox" name="Allow to send?">&nbsp; Yes, I am happy for your
+                                        network of lawyers to contact me.
                                     </label>
                                 </div>
                             </div>
@@ -285,7 +292,8 @@
                             </div> -->
                         </div>
                         <div class="center">
-                            <input type="submit" value="" class="btn btn-default" placeholder="Send">
+                            <input type="submit" class="btn btn-default" placeholder="Send" style="border-radius: 22%;"
+                                id="send-button">
                         </div>
                 </div>
                 <!-- <div class="col-md-12 "> <div class="col-md-12">
@@ -829,6 +837,16 @@
     <script src="assets/js/price-range.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script>
+        // get the element
+        const element = document.getElementById('send-button')
+
+        // always checking if the element is clicked, if so, do alert('hello')
+        element.addEventListener("click", () => {
+            setTimeout(alert('Your form have been submitted!'), 8000);
+            
+        });
+    </script>
 
 </body>
 
